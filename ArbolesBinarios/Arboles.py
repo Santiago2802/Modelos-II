@@ -23,14 +23,15 @@ def a_lista(arbol):
         return []
     return a_lista(arbol.izq)+[arbol.valor]+a_lista(arbol.der)
 
-
+#Función Insertar Nodo a un Árbol
 def insertar(arbol,valor):
+    #Rompimiento de la recursividad
     if arbol==None:
         return Nodo(valor)
     if arbol.valor < valor:
         return Nodo(arbol.valor,arbol.izq,insertar(arbol.der,valor))
     return Nodo(arbol.valor,insertar(arbol.izq,valor),arbol.der)
-
+#Función Lista a un Árbol
 def a_arbol(arbol,lista):
     if lista == []:
         return arbol
@@ -38,7 +39,7 @@ def a_arbol(arbol,lista):
     
 
 def  main():
-    
+    #Árbol Existente
     tree=Nodo(25,Nodo(10,Nodo(5),Nodo(18)),Nodo(40,None,Nodo(50)))
 
     print("Buscar el 10: " + str(buscar(tree,10)))
