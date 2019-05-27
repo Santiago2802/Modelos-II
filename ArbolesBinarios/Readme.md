@@ -2,7 +2,7 @@
 #### Kevin Borda
 #### Arthur Sánchez
 
-# Arboles Binarios 
+## Arboles Binarios 
 
 ### En ciencias de la computación, un árbol binario es una estructura de datos en la cual cada nodo puede tener un hijo izquierdo y un hijo derecho. No pueden tener más de dos hijos (de ahí el nombre "binario").
 
